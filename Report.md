@@ -1,6 +1,6 @@
 ### Report
 
-[image1]:https://github.com/Thedatababbler/udacity_RL_proj2/blob/main/reacher.png
+[image1]:https://github.com/Thedatababbler/udacity_RL_proj2/blob/main/rewards.png
 
 ### Learning Algorithm
 For this project, I used the DDPG algorithm (Deep Deterministic Policy Gradient) to solve this task. DDPG is an algorithm adapted from DQN(Deep Q-Learning)  
