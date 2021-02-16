@@ -1,6 +1,7 @@
 ### Report
 
 [image1]:https://github.com/Thedatababbler/udacity_RL_proj2/blob/main/rewards.png
+[image2]:https://github.com/Thedatababbler/udacity_RL_proj2/blob/main/rewards3.png
 
 ### Learning Algorithm
 For this project, I used the DDPG algorithm (Deep Deterministic Policy Gradient) to solve this task. DDPG is an algorithm adapted from DQN(Deep Q-Learning)  
@@ -27,6 +28,8 @@ After I halved the Tau value to let the target network update less frequently an
 After about 100 episodes, the reward of the multi-agent DDPG network became stable and over 30
 
 ![reward][image1]
+
+![reward2][image2]
 
 
 ### Ideas for Future Work
