@@ -14,7 +14,7 @@ An actor-critic algorithm need to train two seperate networks -- the actor netwo
 Q network that expect the future reward without extend the whole episode for a given action. On the other hand, the actor network in the DDPG only cares about the value of the
 Q network rather than the future reward of an action.
 
-In this project, for both the actor network and the critic network, I used a two-layer linear network to fit the functions. The loss for the critic network is the mean square error between the local network Q-value and the target network. And the loss for the actor network is simply the negative Q-value of the local critic network since we need to
+In this project, for both the actor network and the critic network, I used a two-layer linear network to fit the functions. After several trials, I found a 256 units first linear layer and a 128 units second linear layer is good enough to receive a decent result. The loss for the critic network is the mean square error between the local network Q-value and the target network. And the loss for the actor network is simply the negative Q-value of the local critic network since we need to
 optimize such value. 
 
 I also use the OUnoise in the agent for better training performance. The soft update rate was set as 1e-3, and the learning rate is 1e-4 for both network.
