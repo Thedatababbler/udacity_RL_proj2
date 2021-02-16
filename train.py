@@ -12,7 +12,7 @@ BATCH_SIZE = 128        # minibatch size
 GAMMA = 0.99            # discount factor
 TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 1e-4         # learning rate of the actor 
-LR_CRITIC = 1e-3        # learning rate of the critic
+LR_CRITIC = 1e-4        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -40,7 +40,7 @@ def train():
     print('There are {} agents. Each observes a state with length: {}'.format(states.shape[0], state_size))
     print('The state for the first agent looks like:', states[0])
 
-    agent = Agent(state_size=state_size, action_size=action_size, random_seed=2, num_agents=num_agents)
+    agent = Agent(state_size=state_size, action_size=action_size, random_seed=4, num_agents=num_agents)
     def ddpg(n_episodes=10, max_t=1000, print_every=100):
         scores_deque = deque(maxlen=print_every)
         scores = []
