@@ -53,6 +53,9 @@ Here is an example of my trained agent:
 
 ![agent][image2]
 
+### Update Log
+2021-2-17: Add batch normalization to the actor and critic models to stabelize the training process.
+
 
 
 
